@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<p>Functions can be invoked automatically without being called:</p>
+
+<p id="demo"></p>
+
+<script>
+(function () 
+{
+  document.getElementById("demo").innerHTML = "welcome to sharada web page";
+})
+();
+</script>
+<br>
+
+
+
+<p>Click to trigger a function that will output "Sharada":</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "SHARADA";
+}
+</script>
+
+
+
+// INVOKED FROM CODE
+
+<h2>JS WHICH CAN BE INVOKED FROM THIS CODE</h2>
+
+<p id="demo"></p>
+
+<script>
+function myFunction(a, b)
+ {
+  return a * b;
+}
+document.getElementById("demo").innerHTML = myFunction(10, 5); 
+
+</script>
+
+//string
+
+<p id="demo"></p>
+
+<script>
+let text = "Hello world";  // String written inside quotes
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+
+\\string methods
+
+
+<p>The length property returns the length of a string:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "agsjshdhdjudndnd";
+document.getElementById("demo").innerHTML = text.length;
+</script>
+
+\\string search
+
+<p id="demo"></p>
+
+<script>
+let str = "Please locate where 'locate' occurs!";
+document.getElementById("demo").innerHTML = str.indexOf("locate");
+</script>
+
+\\ string template
+
+<p id="demo"></p>
+
+<p>Template literals are not supported in Internet Explorer.</p>
+
+<script>
+let text = "Hello world!";
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+\\ array
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<script>
+const cars = ["I", "LOVE", "NATURE"];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+\\array methods
+
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo").innerHTML = fruits.toString();
+
+</script>
+
+\\ array sort
+
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+\\array iteration
+
+<h2>JavaScript Array.forEach()</h2>
+<p>Calls a function once for each array element.</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value) {
+  txt += value + "<br>"; 
+}
+</script>
+
+
+\\ array cons
+
+<h2>JavaScript const</h2>
+<p id="demo"></p>
+
+<script>
+
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+
+</script>
+
+
+</body>
+</html>
+
+
+
